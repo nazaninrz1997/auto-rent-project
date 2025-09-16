@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'estedad-thin';
+  src: url('../../public/fonts/Estedad-Thin.eot') format('eot'); 
+  src: url('../../public/fonts/Estedad-Thin.woff2') format('woff2');
+  src: url('../../public/fonts/Estedad-Thin.woff') format('woff');     
+  src: url('../../public/fonts/Estedad-Thin.ttf') format('ttf');    
+}
+
+@font-face {
+  font-family: 'estedad-light';
+  src: url('../../public/fonts/Estedad-Light.eot') format('eot'); 
+  src: url('../../public/fonts/Estedad-Light.woff2') format('woff2');
+  src: url('../../public/fonts/Estedad-Light.woff') format('woff');     
+  src: url('../../public/fonts/Estedad-Light.ttf') format('ttf');    
+}
+
+@font-face {
+  font-family: 'estedad-regular';
+  src: url('../../public/fonts/Estedad-Regular.eot') format('eot'); 
+  src: url('../../public/fonts/Estedad-Regular.woff2') format('woff2');
+  src: url('../../public/fonts/Estedad-Regular.woff') format('woff');     
+  src: url('../../public/fonts/Estedad-Regular.ttf') format('ttf');    
+}
+
+@font-face {
+  font-family: 'estedad-medium';
+  src: url('../../public/fonts/Estedad-Medium.eot') format('eot'); 
+  src: url('../../public/fonts/Estedad-Medium.woff2') format('woff2');
+  src: url('../../public/fonts/Estedad-Medium.woff') format('woff');     
+  src: url('../../public/fonts/Estedad-Medium.ttf') format('ttf');    
+}
+
+@font-face {
+  font-family: 'estedad-semibold';
+  src: url('../../public/fonts/Estedad-SemiBold.eot') format('eot'); 
+  src: url('../../public/fonts/Estedad-SemiBold.woff2') format('woff2');
+  src: url('../../public/fonts/Estedad-SemiBold.woff') format('woff');     
+  src: url('../../public/fonts/Estedad-SemiBold.ttf') format('ttf');    
+}
+
+@font-face {
+  font-family: 'estedad-bold';
+  src: url('../../public/fonts/Estedad-Bold.eot') format('eot'); 
+  src: url('../../public/fonts/Estedad-Bold.woff2') format('woff2');
+  src: url('../../public/fonts/Estedad-Bold.woff') format('woff');     
+  src: url('../../public/fonts/Estedad-Bold.ttf') format('ttf');    
+}
+
+@font-face {
+  font-family: 'estedad-extrabold';
+  src: url('../../public/fonts/Estedad-ExtraBold.eot') format('eot'); 
+  src: url('../../public/fonts/Estedad-ExtraBold.woff2') format('woff2');
+  src: url('../../public/fonts/Estedad-ExtraBold.woff') format('woff');     
+  src: url('../../public/fonts/Estedad-ExtraBold.ttf') format('ttf');    
+}
+
+  @font-face {
+    font-family: 'estedad-black';
+    src: url('../../public/fonts/Estedad-Black.eot') format('eot'); 
+    src: url('../../public/fonts/Estedad-Black.woff2') format('woff2');
+    src: url('../../public/fonts/Estedad-Black.woff') format('woff');     
+    src: url('../../public/fonts/Estedad-Black.ttf') format('ttf');    
+  }
+
+  .font-estedad-thin {
+    font-family: 'estedad-thin', sans-serif;
+    font-weight: 100;
+  }
+
+  .font-estedad-light {
+    font-family: 'estedad-light', sans-serif;
+    font-weight: 300;
+  }
+
+  .font-estedad-regular {
+    font-family: 'estedad-regular', sans-serif;
+    font-weight: 400;
+  }
+  
+  .font-estedad-medium {
+    font-family: 'estedad-medium', sans-serif;
+    font-weight: 500;
+  }
+  
+  .font-estedad-semibold {
+    font-family: 'estedad-semibold', sans-serif;
+    font-weight: 600;
+  }
+  
+  .font-estedad-bold {
+    font-family: 'estedad-bold', sans-serif;
+    font-weight: 700;
+  }
+  
+  .font-estedad-extrabold {
+    font-family: 'estedad-extrabold', sans-serif;
+    font-weight: 800;
+  }
+  
+  .font-estedad-black {
+    font-family: 'estedad-black', sans-serif;
+    font-weight: 900;
+  }
+  
+  
