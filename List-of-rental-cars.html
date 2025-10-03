@@ -14,13 +14,13 @@
       <header
         class="w-full lg:w-[1224px] h-[96px] bg-white rounded-b-[16px] flex items-center justify-between px-6 lg:px-8 fixed top-0 z-20 lg:left-0 lg:right-0 mx-auto"
       >
-      <a href="./index.html">
-        <img
-          src="./public/images/header/Logo.png"
-          alt="auto rent logo"
-          class="w-[125px] md:w-[151px] h-[50px] md:h-[59px] object-cover"
-        />
-      </a>
+        <a href="./index.html">
+          <img
+            src="./public/images/header/Logo.png"
+            alt="auto rent logo"
+            class="w-[125px] md:w-[151px] h-[50px] md:h-[59px] object-cover"
+          />
+        </a>
         <div class="hidden lg:flex items-center gap-[40px]">
           <nav class="flex gap-[40px] items-center justify-center">
             <a
@@ -115,7 +115,6 @@
           ورود/ثبت‌نام
         </a>
       </div>
-
       <!--end header-->
       <!--start slide-->
       <section class="relative">
@@ -140,568 +139,620 @@
         </div>
       </section>
       <!--end slide-->
-      <!--start filter1-->
-      <div
-        class="flex flex-col gap-3 w-full px-3 mt-4 md:flex-col md:gap-4 md:w-full md:mx-auto md:mt-6 lg:w-[1235px] lg:flex-row lg:items-center lg:justify-end lg:p-5 lg:mr-[287px] lg:ml-5 lg:mt-[10px] lg:mb-[-30px]"
-      >
-        <div class="relative w-full md:w-full lg:w-[785px]">
-          <select
-            class="w-full appearance-none border border-[#9A9A9A] rounded-[8px] py-2 pr-4 pl-10 text-right font-estedad-regular text-[#868686] text-[14px] focus:outline-none focus:ring-2 focus:border-blue-500"
-          >
-            <option>تقویم قیمتی</option>
-            <option>بازه یک ماهه</option>
-            <option>بازه سه ماهه</option>
-            <option>بازه شش ماهه</option>
-          </select>
+      <div class="w-full mx-auto p-3">
+        <div class="flex flex-col lg:flex-row gap-4">
+          <!--start filter-right-->
           <div
-            class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none"
+            class="w-full lg:w-[350px] h-fit bg-[#FFFFFF] rounded-[14px] mt-4 p-[24px]"
           >
-            <img
-              src="./public/images/svg/filter-arrow-down.svg"
-              alt="bottom arrow"
-            />
+            <div class="mb-6 pb-3">
+              <button
+                class="flex justify-between items-center w-full text-gray-700 font-semibold accordion-btn"
+              >
+                <span class="font-estedad-medium text-[16px]"
+                  >قیمت اجاره خودرو</span
+                >
+                <img
+                  src="./public/images/svg/filter-arrow-down.svg"
+                  alt="arrow down"
+                  class="rotate-180"
+                />
+              </button>
+              <div class="mt-4 accordion-content">
+                <div
+                  class="flex justify-between font-estedad-medium text-[14px] text-gray-600 mb-2"
+                >
+                  <span>از ۶,۰۰۰,۰۰۰ تومان</span>
+                  <span>تا ۶۰,۰۰۰,۰۰۰ تومان</span>
+                </div>
+                <input
+                  type="range"
+                  min="600000"
+                  max="60000000"
+                  value="1000000"
+                  class="w-full accent-blue-600"
+                />
+              </div>
+            </div>
+            <div class="mb-6 pb-3">
+              <button
+                class="flex justify-between items-center w-full text-gray-700 font-semibold accordion-btn"
+              >
+                <span class="font-estedad-medium text-[16px]">برند خودرو</span>
+                <img
+                  src="./public/images/svg/filter-arrow-down.svg"
+                  alt="arrow down"
+                />
+              </button>
+              <div
+                class="mt-4 accordion-content hidden space-y-2 font-estedad-regular text-[14px]"
+              >
+                <label class="flex items-center gap-2 text-gray-700">
+                  <input
+                    type="checkbox"
+                    checked
+                    class="accent-blue-600 w-[16px] h-[16px]"
+                  />
+                  اجاره بنز
+                </label>
+                <label class="flex items-center gap-2 text-gray-700">
+                  <input
+                    type="checkbox"
+                    class="accent-blue-600 w-[16px] h-[16px]"
+                  />
+                  اجاره بی‌ام‌و
+                </label>
+                <label class="flex items-center gap-2 text-gray-700">
+                  <input
+                    type="checkbox"
+                    class="accent-blue-600 w-[16px] h-[16px]"
+                  />
+                  اجاره پژو
+                </label>
+                <label class="flex items-center gap-2 text-gray-700">
+                  <input
+                    type="checkbox"
+                    class="accent-blue-600 w-[16px] h-[16px]"
+                  />
+                  اجاره پورشه
+                </label>
+                <label class="flex items-center gap-2 text-gray-700">
+                  <input
+                    type="checkbox"
+                    class="accent-blue-600 w-[16px] h-[16px]"
+                  />
+                  اجاره کیا
+                </label>
+                <label class="flex items-center gap-2 text-gray-700">
+                  <input
+                    type="checkbox"
+                    class="accent-blue-600 w-[16px] h-[16px]"
+                  />
+                  اجاره هیوندای
+                </label>
+              </div>
+            </div>
+            <div class="mb-6 pb-3">
+              <button
+                class="flex justify-between items-center w-full text-gray-700 font-semibold accordion-btn"
+              >
+                <span class="font-estedad-medium text-[16px]"
+                  >اجاره خودرو براساس نیاز شما</span
+                >
+                <img
+                  src="./public/images/svg/filter-arrow-down.svg"
+                  alt="arrow down"
+                />
+              </button>
+              <div
+                class="mt-4 accordion-content hidden space-y-2 font-estedad-regular text-[14px]"
+              >
+                <label class="flex items-center gap-2 text-gray-700">
+                  <input
+                    type="radio"
+                    name="need"
+                    checked
+                    class="accent-blue-600 w-[16px] h-[16px]"
+                  />
+                  اجاره خودرو با راننده
+                </label>
+                <label class="flex items-center gap-2 text-gray-700">
+                  <input
+                    type="radio"
+                    name="need"
+                    class="accent-blue-600 w-[16px] h-[16px]"
+                  />
+                  اجاره خودرو بدون راننده
+                </label>
+                <label class="flex items-center gap-2 text-gray-700">
+                  <input
+                    type="radio"
+                    name="need"
+                    class="accent-blue-600 w-[16px] h-[16px]"
+                  />
+                  اجاره خودرو ایرانی
+                </label>
+                <label class="flex items-center gap-2 text-gray-700">
+                  <input
+                    type="radio"
+                    name="need"
+                    class="accent-blue-600 w-[16px] h-[16px]"
+                  />
+                  اجاره خودرو لوکس
+                </label>
+                <label class="flex items-center gap-2 text-gray-700">
+                  <input
+                    type="radio"
+                    name="need"
+                    class="accent-blue-600 w-[16px] h-[16px]"
+                  />
+                  اجاره خودرو تشریفات
+                </label>
+                <label class="flex items-center gap-2 text-gray-700">
+                  <input
+                    type="radio"
+                    name="need"
+                    class="accent-blue-600 w-[16px] h-[16px]"
+                  />
+                  اجاره ماشین عروس
+                </label>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="relative w-full md:w-full lg:w-[385px]">
-          <select
-            class="w-full appearance-none border border-[#9A9A9A] rounded-[8px] py-2 pr-4 pl-10 text-right font-estedad-regular text-[#868686] text-[14px] focus:outline-none focus:ring-2 focus:border-blue-500"
-          >
-            <option>مرتب‌سازی بر اساس</option>
-            <option>جدیدترین</option>
-            <option>قدیمی‌ترین</option>
-            <option>قیمت (کم به زیاد)</option>
-            <option>قیمت (زیاد به کم)</option>
-          </select>
-          <div
-            class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none"
-          >
-            <img
-              src="./public/images/svg/filter-arrow-down.svg"
-              alt="bottom arrow"
-            />
+          <!--end filter-right-->
+          <!--start filter-top and car rent-card-->
+          <div class="w-full">
+            <div class="w-full">
+              <!--start filter-top-->
+              <div
+                class="flex flex-col lg:flex-row gap-3 w-full mt-4 lg:items-center lg:justify-between"
+              >
+                <div class="relative w-full lg:max-w-[785px]">
+                  <select
+                    class="w-full appearance-none border border-[#9A9A9A] rounded-[8px] py-2 pr-4 pl-10 text-right font-estedad-regular text-[#868686] text-[14px] focus:outline-none focus:ring-2 focus:border-blue-500"
+                  >
+                    <option>تقویم قیمتی</option>
+                    <option>بازه یک ماهه</option>
+                    <option>بازه سه ماهه</option>
+                    <option>بازه شش ماهه</option>
+                  </select>
+                  <div
+                    class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none"
+                  >
+                    <img
+                      src="./public/images/svg/filter-arrow-down.svg"
+                      alt="bottom arrow"
+                    />
+                  </div>
+                </div>
+                <div class="relative w-full lg:max-w-[385px]">
+                  <select
+                    class="w-full appearance-none border border-[#9A9A9A] rounded-[8px] py-2 pr-4 pl-10 text-right font-estedad-regular text-[#868686] text-[14px] focus:outline-none focus:ring-2 focus:border-blue-500"
+                  >
+                    <option>مرتب‌سازی بر اساس</option>
+                    <option>جدیدترین</option>
+                    <option>قدیمی‌ترین</option>
+                    <option>قیمت (کم به زیاد)</option>
+                    <option>قیمت (زیاد به کم)</option>
+                  </select>
+                  <div
+                    class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none"
+                  >
+                    <img
+                      src="./public/images/svg/filter-arrow-down.svg"
+                      alt="bottom arrow"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!--end filter-top-->
+              <!--start car rent-card-->
+              <div
+                class="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5 lg:gap-2 mt-5"
+              >
+                <div
+                  class="w-[392px] h-[510px] bg-white rounded-[12px] border border-[#E6E6E6] overflow-hidden"
+                >
+                  <div class="p-[10px]">
+                    <img
+                      src="./public/images/car-rent-card/card-image1.jpg"
+                      alt="car"
+                      class="border-[1px] border-[#F3F3F3] rounded-[12px]"
+                    />
+                    <h2 class="font-estedad-semibold text-[16px] mb-3 mt-1">
+                      اجاره بنز E350 سدان
+                    </h2>
+                    <h3 class="font-estedad-light text-[12px] mb-3">
+                      مدل:2016
+                    </h3>
+                    <div
+                      class="w-full h-[44px] flex bg-[#F3F3F3] rounded-[8px] p-3.5 mb-3"
+                    >
+                      <h3
+                        class="font-estedad-regular text-[12px] w-[60px] mb-3"
+                      >
+                        از ۱ تا 30 روز:
+                      </h3>
+                      <h3
+                        class="font-estedad-medium text-[16px] w-[241px] text-[#194BF0] mr-1 mb-3"
+                      >
+                        8,500,000
+                      </h3>
+                      <h3 class="font-estedad-light text-[12px] w-[27px] mb-3">
+                        روزانه
+                      </h3>
+                    </div>
+                    <div
+                      class="w-full h-[44px] flex bg-[#F3F3F3] rounded-[8px] p-3.5"
+                    >
+                      <h3
+                        class="font-estedad-regular text-[12px] w-[60px] mb-3"
+                      >
+                        از ۱ تا 30 روز:
+                      </h3>
+                      <h3
+                        class="font-estedad-medium text-[16px] w-[241px] text-[#194BF0] mr-1 mb-3"
+                      >
+                        8,500,000
+                      </h3>
+                      <h3 class="font-estedad-light text-[12px] w-[27px] mb-3">
+                        ماهانه
+                      </h3>
+                    </div>
+                    <div
+                      class="border-t-1 border-t-[#D7D7D7] flex justify-between items-center mt-3"
+                    >
+                      <h3 class="font-estedad-regular text-[12px] w-[65] mt-1">
+                        مبلغ ضمانت:
+                      </h3>
+                      <h3 class="font-estedad-medium text-[12px] w-[85] mt-1">
+                        80 میلیون تومان
+                      </h3>
+                    </div>
+                    <a
+                      href="#"
+                      class="w-full bg-[#194BF0] rounded-[8px] text-white font-estedad-medium text-[14px] flex items-center justify-center mt-2 px-16 py-2"
+                      >درخواست رزرو</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="w-[392px] h-[510px] bg-white rounded-[12px] border border-[#E6E6E6] overflow-hidden"
+                >
+                  <div class="p-[10px]">
+                    <img
+                      src="./public/images/car-rent-card/card-image2.jpg"
+                      alt="car"
+                      class="border-[1px] border-[#F3F3F3] rounded-[12px]"
+                    />
+                    <h2 class="font-estedad-semibold text-[16px] mb-3 mt-1">
+                      اجاره تویوتا لندکروز در تهران 2013
+                    </h2>
+                    <h3 class="font-estedad-light text-[12px] mb-3">
+                      مدل:2016
+                    </h3>
+                    <div
+                      class="w-full h-[44px] flex bg-[#F3F3F3] rounded-[8px] p-3.5 mb-3"
+                    >
+                      <h3
+                        class="font-estedad-regular text-[12px] w-[60px] mb-3"
+                      >
+                        از ۱ تا 30 روز:
+                      </h3>
+                      <h3
+                        class="font-estedad-medium text-[16px] w-[241px] text-[#194BF0] mr-1 mb-3"
+                      >
+                        8,500,000
+                      </h3>
+                      <h3 class="font-estedad-light text-[12px] w-[27px] mb-3">
+                        روزانه
+                      </h3>
+                    </div>
+                    <div
+                      class="w-full h-[44px] flex bg-[#F3F3F3] rounded-[8px] p-3.5"
+                    >
+                      <h3
+                        class="font-estedad-regular text-[12px] w-[60px] mb-3"
+                      >
+                        از ۱ تا 30 روز:
+                      </h3>
+                      <h3
+                        class="font-estedad-medium text-[16px] w-[241px] text-[#194BF0] mr-1 mb-3"
+                      >
+                        8,500,000
+                      </h3>
+                      <h3 class="font-estedad-light text-[12px] w-[27px] mb-3">
+                        ماهانه
+                      </h3>
+                    </div>
+                    <div
+                      class="border-t-1 border-t-[#D7D7D7] flex justify-between items-center mt-3"
+                    >
+                      <h3 class="font-estedad-regular text-[12px] w-[65] mt-1">
+                        مبلغ ضمانت:
+                      </h3>
+                      <h3 class="font-estedad-medium text-[12px] w-[85] mt-1">
+                        80 میلیون تومان
+                      </h3>
+                    </div>
+                    <a
+                      href="#"
+                      class="w-full bg-[#194BF0] rounded-[8px] text-white font-estedad-medium text-[14px] flex items-center justify-center mt-2 px-16 py-2"
+                      >درخواست رزرو</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="w-[392px] h-[510px] bg-white rounded-[12px] border border-[#E6E6E6] overflow-hidden relative"
+                >
+                  <div class="p-[10px]">
+                    <img
+                      src="./public/images/car-rent-card/card-image3.jpg"
+                      alt="car"
+                      class="border-[1px] border-[#F3F3F3] rounded-[12px]"
+                    />
+                    <h2 class="font-estedad-semibold text-[16px] mb-3 mt-1">
+                      اجاره جنسیس کوپه
+                    </h2>
+                    <h3 class="font-estedad-light text-[12px] mb-3">
+                      مدل:2016
+                    </h3>
+                    <div
+                      class="w-full h-[44px] flex bg-[#F3F3F3] rounded-[8px] p-3.5 mb-3"
+                    >
+                      <h3
+                        class="font-estedad-regular text-[12px] w-[60px] mb-3"
+                      >
+                        از ۱ تا 30 روز:
+                      </h3>
+                      <h3
+                        class="font-estedad-medium text-[16px] w-[241px] text-[#194BF0] mr-1 mb-3"
+                      >
+                        8,500,000
+                      </h3>
+                      <h3 class="font-estedad-light text-[12px] w-[27px] mb-3">
+                        روزانه
+                      </h3>
+                    </div>
+                    <div
+                      class="w-full h-[44px] flex bg-[#F3F3F3] rounded-[8px] p-3.5"
+                    >
+                      <h3
+                        class="font-estedad-regular text-[12px] w-[60px] mb-3"
+                      >
+                        از ۱ تا 30 روز:
+                      </h3>
+                      <h3
+                        class="font-estedad-medium text-[16px] w-[241px] text-[#194BF0] mr-1 mb-3"
+                      >
+                        8,500,000
+                      </h3>
+                      <h3 class="font-estedad-light text-[12px] w-[27px] mb-3">
+                        ماهانه
+                      </h3>
+                    </div>
+                    <div
+                      class="border-t-1 border-t-[#D7D7D7] flex justify-between items-center mt-3"
+                    >
+                      <h3 class="font-estedad-regular text-[12px] w-[65] mt-1">
+                        مبلغ ضمانت:
+                      </h3>
+                      <h3 class="font-estedad-medium text-[12px] w-[85] mt-1">
+                        80 میلیون تومان
+                      </h3>
+                    </div>
+                    <a
+                      href="#"
+                      class="w-full bg-[#194BF0] rounded-[8px] text-white font-estedad-medium text-[14px] flex items-center justify-center mt-2 px-16 py-2"
+                      >درخواست رزرو</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="w-[392px] h-[510px] bg-white rounded-[12px] border border-[#E6E6E6] overflow-hidden"
+                >
+                  <div class="p-[10px]">
+                    <img
+                      src="./public/images/car-rent-card/card-image4.jpg"
+                      alt="car"
+                      class="border-[1px] border-[#F3F3F3] rounded-[12px]"
+                    />
+                    <h2 class="font-estedad-semibold text-[16px] mb-3 mt-1">
+                      اجاره بی ام و 528
+                    </h2>
+                    <h3 class="font-estedad-light text-[12px] mb-3">
+                      مدل:2016
+                    </h3>
+                    <div
+                      class="w-full h-[44px] flex bg-[#F3F3F3] rounded-[8px] p-3.5 mb-3"
+                    >
+                      <h3
+                        class="font-estedad-regular text-[12px] w-[60px] mb-3"
+                      >
+                        از ۱ تا 30 روز:
+                      </h3>
+                      <h3
+                        class="font-estedad-medium text-[16px] w-[241px] text-[#194BF0] mr-1 mb-3"
+                      >
+                        8,500,000
+                      </h3>
+                      <h3 class="font-estedad-light text-[12px] w-[27px] mb-3">
+                        روزانه
+                      </h3>
+                    </div>
+                    <div
+                      class="w-full h-[44px] flex bg-[#F3F3F3] rounded-[8px] p-3.5"
+                    >
+                      <h3
+                        class="font-estedad-regular text-[12px] w-[60px] mb-3"
+                      >
+                        از ۱ تا 30 روز:
+                      </h3>
+                      <h3
+                        class="font-estedad-medium text-[16px] w-[241px] text-[#194BF0] mr-1 mb-3"
+                      >
+                        8,500,000
+                      </h3>
+                      <h3 class="font-estedad-light text-[12px] w-[27px] mb-3">
+                        ماهانه
+                      </h3>
+                    </div>
+                    <div
+                      class="border-t-1 border-t-[#D7D7D7] flex justify-between items-center mt-3"
+                    >
+                      <h3 class="font-estedad-regular text-[12px] w-[65] mt-1">
+                        مبلغ ضمانت:
+                      </h3>
+                      <h3 class="font-estedad-medium text-[12px] w-[85] mt-1">
+                        80 میلیون تومان
+                      </h3>
+                    </div>
+                    <a
+                      href="#"
+                      class="w-full bg-[#194BF0] rounded-[8px] text-white font-estedad-medium text-[14px] flex items-center justify-center mt-2 px-16 py-2"
+                      >درخواست رزرو</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="w-[392px] h-[510px] bg-white rounded-[12px] border border-[#E6E6E6] overflow-hidden"
+                >
+                  <div class="p-[10px]">
+                    <img
+                      src="./public/images/car-rent-card/card-image5.jpg"
+                      alt="car"
+                      class="border-[1px] border-[#F3F3F3] rounded-[12px]"
+                    />
+                    <h2 class="font-estedad-semibold text-[16px] mb-3 mt-1">
+                      اجاره هیوندای توسان 2014
+                    </h2>
+                    <h3 class="font-estedad-light text-[12px] mb-3">
+                      مدل:2016
+                    </h3>
+                    <div
+                      class="w-full h-[44px] flex bg-[#F3F3F3] rounded-[8px] p-3.5 mb-3"
+                    >
+                      <h3
+                        class="font-estedad-regular text-[12px] w-[60px] mb-3"
+                      >
+                        از ۱ تا 30 روز:
+                      </h3>
+                      <h3
+                        class="font-estedad-medium text-[16px] w-[241px] text-[#194BF0] mr-1 mb-3"
+                      >
+                        8,500,000
+                      </h3>
+                      <h3 class="font-estedad-light text-[12px] w-[27px] mb-3">
+                        روزانه
+                      </h3>
+                    </div>
+                    <div
+                      class="w-full h-[44px] flex bg-[#F3F3F3] rounded-[8px] p-3.5"
+                    >
+                      <h3
+                        class="font-estedad-regular text-[12px] w-[60px] mb-3"
+                      >
+                        از ۱ تا 30 روز:
+                      </h3>
+                      <h3
+                        class="font-estedad-medium text-[16px] w-[241px] text-[#194BF0] mr-1 mb-3"
+                      >
+                        8,500,000
+                      </h3>
+                      <h3 class="font-estedad-light text-[12px] w-[27px] mb-3">
+                        ماهانه
+                      </h3>
+                    </div>
+                    <div
+                      class="border-t-1 border-t-[#D7D7D7] flex justify-between items-center mt-3"
+                    >
+                      <h3 class="font-estedad-regular text-[12px] w-[65] mt-1">
+                        مبلغ ضمانت:
+                      </h3>
+                      <h3 class="font-estedad-medium text-[12px] w-[85] mt-1">
+                        80 میلیون تومان
+                      </h3>
+                    </div>
+                    <a
+                      href="#"
+                      class="w-full bg-[#194BF0] rounded-[8px] text-white font-estedad-medium text-[14px] flex items-center justify-center mt-2 px-16 py-2"
+                      >درخواست رزرو</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="w-[392px] h-[510px] bg-white rounded-[12px] border border-[#E6E6E6] overflow-hidden"
+                >
+                  <div class="p-[10px]">
+                    <img
+                      src="./public/images/car-rent-card/card-image6.jpg"
+                      alt="car"
+                      class="border-[1px] border-[#F3F3F3] rounded-[12px]"
+                    />
+                    <h2 class="font-estedad-semibold text-[16px] mb-3 mt-1">
+                      اجاره بنز sl کروک
+                    </h2>
+                    <h3 class="font-estedad-light text-[12px] mb-3">
+                      مدل:2016
+                    </h3>
+                    <div
+                      class="w-full h-[44px] flex bg-[#F3F3F3] rounded-[8px] p-3.5 mb-3"
+                    >
+                      <h3
+                        class="font-estedad-regular text-[12px] w-[60px] mb-3"
+                      >
+                        از ۱ تا 30 روز:
+                      </h3>
+                      <h3
+                        class="font-estedad-medium text-[16px] w-[241px] text-[#194BF0] mr-1 mb-3"
+                      >
+                        8,500,000
+                      </h3>
+                      <h3 class="font-estedad-light text-[12px] w-[27px] mb-3">
+                        روزانه
+                      </h3>
+                    </div>
+                    <div
+                      class="w-full h-[44px] flex bg-[#F3F3F3] rounded-[8px] p-3.5"
+                    >
+                      <h3
+                        class="font-estedad-regular text-[12px] w-[60px] mb-3"
+                      >
+                        از ۱ تا 30 روز:
+                      </h3>
+                      <h3
+                        class="font-estedad-medium text-[16px] w-[241px] text-[#194BF0] mr-1 mb-3"
+                      >
+                        8,500,000
+                      </h3>
+                      <h3 class="font-estedad-light text-[12px] w-[27px] mb-3">
+                        ماهانه
+                      </h3>
+                    </div>
+                    <div
+                      class="border-t-1 border-t-[#D7D7D7] flex justify-between items-center mt-3"
+                    >
+                      <h3 class="font-estedad-regular text-[12px] w-[65] mt-1">
+                        مبلغ ضمانت:
+                      </h3>
+                      <h3 class="font-estedad-medium text-[12px] w-[85] mt-1">
+                        80 میلیون تومان
+                      </h3>
+                    </div>
+                    <a
+                      href="#"
+                      class="w-full bg-[#194BF0] rounded-[8px] text-white font-estedad-medium text-[14px] flex items-center justify-center mt-2 px-16 py-2"
+                      >درخواست رزرو</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!--end car rent-card-->
+            </div>
           </div>
+          <!--end filter-top and car rent-card-->
         </div>
       </div>
-      <!--end filter1-->
-      <!--start car rent-card and filter2-->
-      <div class="lg:flex">
-        <!--start filter2-->
-        <div
-          class="w-full md:w-full lg:w-[515px] h-fit md:mx-auto bg-[#FFFFFF] rounded-[14px] lg:mt-[-29px] mt-5 lg:mr-[20px] lg:p-[24px] p-[24px]"
-        >
-          <div class="mb-6 pb-3">
-            <button
-              class="flex justify-between items-center w-full text-gray-700 font-semibold accordion-btn"
-            >
-              <span class="font-estedad-medium text-[16px]"
-                >قیمت اجاره خودرو</span
-              >
-              <img src="./public/images/svg/filter-arrow-down.svg" alt="arrow down" class="rotate-180">
-            </button>
-            <div class="mt-4 accordion-content">
-              <div
-                class="flex justify-between font-estedad-medium text-[14px] text-gray-600 mb-2"
-              >
-                <span>از ۶,۰۰۰,۰۰۰ تومان</span>
-                <span>تا ۶۰,۰۰۰,۰۰۰ تومان</span>
-              </div>
-              <input
-                type="range"
-                min="600000"
-                max="60000000"
-                value="1000000"
-                class="w-full accent-blue-600"
-              />
-            </div>
-          </div>
-          <div class="mb-6 pb-3">
-            <button
-              class="flex justify-between items-center w-full text-gray-700 font-semibold accordion-btn"
-            >
-              <span class="font-estedad-medium text-[16px]">برند خودرو</span>
-              <img src="./public/images/svg/filter-arrow-down.svg" alt="arrow down">
-            </button>
-            <div
-              class="mt-4 accordion-content hidden space-y-2 font-estedad-regular text-[14px]"
-            >
-              <label class="flex items-center gap-2 text-gray-700">
-                <input
-                  type="checkbox"
-                  checked
-                  class="accent-blue-600 w-[16px] h-[16px]"
-                />
-                اجاره بنز
-              </label>
-              <label class="flex items-center gap-2 text-gray-700">
-                <input
-                  type="checkbox"
-                  class="accent-blue-600 w-[16px] h-[16px]"
-                />
-                اجاره بی‌ام‌و
-              </label>
-              <label class="flex items-center gap-2 text-gray-700">
-                <input
-                  type="checkbox"
-                  class="accent-blue-600 w-[16px] h-[16px]"
-                />
-                اجاره پژو
-              </label>
-              <label class="flex items-center gap-2 text-gray-700">
-                <input
-                  type="checkbox"
-                  class="accent-blue-600 w-[16px] h-[16px]"
-                />
-                اجاره پورشه
-              </label>
-              <label class="flex items-center gap-2 text-gray-700">
-                <input
-                  type="checkbox"
-                  class="accent-blue-600 w-[16px] h-[16px]"
-                />
-                اجاره کیا
-              </label>
-              <label class="flex items-center gap-2 text-gray-700">
-                <input
-                  type="checkbox"
-                  class="accent-blue-600 w-[16px] h-[16px]"
-                />
-                اجاره هیوندای
-              </label>
-            </div>
-          </div>
-          <div class="mb-6 pb-3">
-            <button
-              class="flex justify-between items-center w-full text-gray-700 font-semibold accordion-btn"
-            >
-              <span class="font-estedad-medium text-[16px]"
-                >اجاره خودرو براساس نیاز شما</span
-              >
-              <img src="./public/images/svg/filter-arrow-down.svg" alt="arrow down">
-            </button>
-            <div
-              class="mt-4 accordion-content hidden space-y-2 font-estedad-regular text-[14px]"
-            >
-              <label class="flex items-center gap-2 text-gray-700">
-                <input
-                  type="radio"
-                  name="need"
-                  checked
-                  class="accent-blue-600 w-[16px] h-[16px]"
-                />
-                اجاره خودرو با راننده
-              </label>
-              <label class="flex items-center gap-2 text-gray-700">
-                <input
-                  type="radio"
-                  name="need"
-                  class="accent-blue-600 w-[16px] h-[16px]"
-                />
-                اجاره خودرو بدون راننده
-              </label>
-              <label class="flex items-center gap-2 text-gray-700">
-                <input
-                  type="radio"
-                  name="need"
-                  class="accent-blue-600 w-[16px] h-[16px]"
-                />
-                اجاره خودرو ایرانی
-              </label>
-              <label class="flex items-center gap-2 text-gray-700">
-                <input
-                  type="radio"
-                  name="need"
-                  class="accent-blue-600 w-[16px] h-[16px]"
-                />
-                اجاره خودرو لوکس
-              </label>
-              <label class="flex items-center gap-2 text-gray-700">
-                <input
-                  type="radio"
-                  name="need"
-                  class="accent-blue-600 w-[16px] h-[16px]"
-                />
-                اجاره خودرو تشریفات
-              </label>
-              <label class="flex items-center gap-2 text-gray-700">
-                <input
-                  type="radio"
-                  name="need"
-                  class="accent-blue-600 w-[16px] h-[16px]"
-                />
-                اجاره ماشین عروس
-              </label>
-            </div>
-          </div>
-        </div>
-        <!--end filter2-->
-        <!--start car rent-card-->
-        <div
-          class="flex flex-wrap justify-center items-center lg:justify-end lg:items-end md:justify-center md:items-center gap-[15px] mt-15 lg:mt-10 lg:ml-5 relative"
-        >
-          <div
-            class="w-[385px] h-[510px] bg-white rounded-[12px] border border-[#E6E6E6] overflow-hidden"
-          >
-            <div class="p-[10px]">
-              <img
-                src="./public/images/car-rent-card/card-image1.jpg"
-                alt="car"
-                class="border-[1px] border-[#F3F3F3] rounded-[12px]"
-              />
-              <h2 class="font-estedad-semibold text-[16px] mb-3 mt-1">
-                اجاره بنز E350 سدان
-              </h2>
-              <h3 class="font-estedad-light text-[12px] mb-3">مدل:2016</h3>
-              <div
-                class="w-[full] h-[44px] flex bg-[#F3F3F3] rounded-[8px] p-3.5 mb-3"
-              >
-                <h3 class="font-estedad-regular text-[12px] w-[60px] mb-3">
-                  از ۱ تا 30 روز:
-                </h3>
-                <h3
-                  class="font-estedad-medium text-[16px] w-[241px] text-[#194BF0] mr-1 mb-3"
-                >
-                  8,500,000
-                </h3>
-                <h3 class="font-estedad-light text-[12px] w-[27px] mb-3">
-                  روزانه
-                </h3>
-              </div>
-              <div
-                class="w-[full] h-[44px] flex bg-[#F3F3F3] rounded-[8px] p-3.5"
-              >
-                <h3 class="font-estedad-regular text-[12px] w-[60px] mb-3">
-                  از ۱ تا 30 روز:
-                </h3>
-                <h3
-                  class="font-estedad-medium text-[16px] w-[241px] text-[#194BF0] mr-1 mb-3"
-                >
-                  8,500,000
-                </h3>
-                <h3 class="font-estedad-light text-[12px] w-[27px] mb-3">
-                  ماهانه
-                </h3>
-              </div>
-              <div
-                class="border-t-1 border-t-[#D7D7D7] flex justify-between items-centerw-[full] mt-3"
-              >
-                <h3 class="font-estedad-regular text-[12px] w-[65] mt-1">
-                  مبلغ ضمانت:
-                </h3>
-                <h3 class="font-estedad-medium text-[12px] w-[85] mt-1">
-                  80 میلیون تومان
-                </h3>
-              </div>
-              <a
-                href="#"
-                class="w-full bg-[#194BF0] rounded-[8px] text-white font-estedad-medium text-[14px] flex items-center justify-center mt-2 px-16 py-2"
-                >درخواست رزرو</a
-              >
-            </div>
-          </div>
-          <div
-            class="w-[385px] h-[510px] bg-white rounded-[12px] border border-[#E6E6E6] overflow-hidden"
-          >
-            <div class="p-[10px]">
-              <img
-                src="./public/images/car-rent-card/card-image2.jpg"
-                alt="car"
-                class="border-[1px] border-[#F3F3F3] rounded-[12px]"
-              />
-              <h2 class="font-estedad-semibold text-[16px] mb-3 mt-1">
-                اجاره تویوتا لندکروز در تهران 2013
-              </h2>
-              <h3 class="font-estedad-light text-[12px] mb-3">مدل:2016</h3>
-              <div
-                class="w-[full] h-[44px] flex bg-[#F3F3F3] rounded-[8px] p-3.5 mb-3"
-              >
-                <h3 class="font-estedad-regular text-[12px] w-[60px] mb-3">
-                  از ۱ تا 30 روز:
-                </h3>
-                <h3
-                  class="font-estedad-medium text-[16px] w-[241px] text-[#194BF0] mr-1 mb-3"
-                >
-                  8,500,000
-                </h3>
-                <h3 class="font-estedad-light text-[12px] w-[27px] mb-3">
-                  روزانه
-                </h3>
-              </div>
-              <div
-                class="w-[full] h-[44px] flex bg-[#F3F3F3] rounded-[8px] p-3.5"
-              >
-                <h3 class="font-estedad-regular text-[12px] w-[60px] mb-3">
-                  از ۱ تا 30 روز:
-                </h3>
-                <h3
-                  class="font-estedad-medium text-[16px] w-[241px] text-[#194BF0] mr-1 mb-3"
-                >
-                  8,500,000
-                </h3>
-                <h3 class="font-estedad-light text-[12px] w-[27px] mb-3">
-                  ماهانه
-                </h3>
-              </div>
-              <div
-                class="border-t-1 border-t-[#D7D7D7] flex justify-between items-centerw-[full] mt-3"
-              >
-                <h3 class="font-estedad-regular text-[12px] w-[65] mt-1">
-                  مبلغ ضمانت:
-                </h3>
-                <h3 class="font-estedad-medium text-[12px] w-[85] mt-1">
-                  80 میلیون تومان
-                </h3>
-              </div>
-              <a
-                href="#"
-                class="w-full bg-[#194BF0] rounded-[8px] text-white font-estedad-medium text-[14px] flex items-center justify-center mt-2 px-16 py-2"
-                >درخواست رزرو</a
-              >
-            </div>
-          </div>
-          <div
-            class="w-[385px] h-[510px] bg-white rounded-[12px] border border-[#E6E6E6] overflow-hidden relative"
-          >
-            <div class="p-[10px]">
-              <img
-                src="./public/images/car-rent-card/card-image3.jpg"
-                alt="car"
-                class="border-[1px] border-[#F3F3F3] rounded-[12px]"
-              />
-              <h2 class="font-estedad-semibold text-[16px] mb-3 mt-1">
-                اجاره جنسیس کوپه
-              </h2>
-              <h3 class="font-estedad-light text-[12px] mb-3">مدل:2016</h3>
-              <div
-                class="w-[full] h-[44px] flex bg-[#F3F3F3] rounded-[8px] p-3.5 mb-3"
-              >
-                <h3 class="font-estedad-regular text-[12px] w-[60px] mb-3">
-                  از ۱ تا 30 روز:
-                </h3>
-                <h3
-                  class="font-estedad-medium text-[16px] w-[241px] text-[#194BF0] mr-1 mb-3"
-                >
-                  8,500,000
-                </h3>
-                <h3 class="font-estedad-light text-[12px] w-[27px] mb-3">
-                  روزانه
-                </h3>
-              </div>
-              <div
-                class="w-[full] h-[44px] flex bg-[#F3F3F3] rounded-[8px] p-3.5"
-              >
-                <h3 class="font-estedad-regular text-[12px] w-[60px] mb-3">
-                  از ۱ تا 30 روز:
-                </h3>
-                <h3
-                  class="font-estedad-medium text-[16px] w-[241px] text-[#194BF0] mr-1 mb-3"
-                >
-                  8,500,000
-                </h3>
-                <h3 class="font-estedad-light text-[12px] w-[27px] mb-3">
-                  ماهانه
-                </h3>
-              </div>
-              <div
-                class="border-t-1 border-t-[#D7D7D7] flex justify-between items-centerw-[full] mt-3"
-              >
-                <h3 class="font-estedad-regular text-[12px] w-[65] mt-1">
-                  مبلغ ضمانت:
-                </h3>
-                <h3 class="font-estedad-medium text-[12px] w-[85] mt-1">
-                  80 میلیون تومان
-                </h3>
-              </div>
-              <a
-                href="#"
-                class="w-full bg-[#194BF0] rounded-[8px] text-white font-estedad-medium text-[14px] flex items-center justify-center mt-2 px-16 py-2"
-                >درخواست رزرو</a
-              >
-            </div>
-          </div>
-          <div
-            class="w-[385px] h-[510px] bg-white rounded-[12px] border border-[#E6E6E6] overflow-hidden"
-          >
-            <div class="p-[10px]">
-              <img
-                src="./public/images/car-rent-card/card-image4.jpg"
-                alt="car"
-                class="border-[1px] border-[#F3F3F3] rounded-[12px]"
-              />
-              <h2 class="font-estedad-semibold text-[16px] mb-3 mt-1">
-                اجاره بی ام و 528
-              </h2>
-              <h3 class="font-estedad-light text-[12px] mb-3">مدل:2016</h3>
-              <div
-                class="w-[full] h-[44px] flex bg-[#F3F3F3] rounded-[8px] p-3.5 mb-3"
-              >
-                <h3 class="font-estedad-regular text-[12px] w-[60px] mb-3">
-                  از ۱ تا 30 روز:
-                </h3>
-                <h3
-                  class="font-estedad-medium text-[16px] w-[241px] text-[#194BF0] mr-1 mb-3"
-                >
-                  8,500,000
-                </h3>
-                <h3 class="font-estedad-light text-[12px] w-[27px] mb-3">
-                  روزانه
-                </h3>
-              </div>
-              <div
-                class="w-[full] h-[44px] flex bg-[#F3F3F3] rounded-[8px] p-3.5"
-              >
-                <h3 class="font-estedad-regular text-[12px] w-[60px] mb-3">
-                  از ۱ تا 30 روز:
-                </h3>
-                <h3
-                  class="font-estedad-medium text-[16px] w-[241px] text-[#194BF0] mr-1 mb-3"
-                >
-                  8,500,000
-                </h3>
-                <h3 class="font-estedad-light text-[12px] w-[27px] mb-3">
-                  ماهانه
-                </h3>
-              </div>
-              <div
-                class="border-t-1 border-t-[#D7D7D7] flex justify-between items-centerw-[full] mt-3"
-              >
-                <h3 class="font-estedad-regular text-[12px] w-[65] mt-1">
-                  مبلغ ضمانت:
-                </h3>
-                <h3 class="font-estedad-medium text-[12px] w-[85] mt-1">
-                  80 میلیون تومان
-                </h3>
-              </div>
-              <a
-                href="#"
-                class="w-full bg-[#194BF0] rounded-[8px] text-white font-estedad-medium text-[14px] flex items-center justify-center mt-2 px-16 py-2"
-                >درخواست رزرو</a
-              >
-            </div>
-          </div>
-          <div
-            class="w-[385px] h-[510px] bg-white rounded-[12px] border border-[#E6E6E6] overflow-hidden"
-          >
-            <div class="p-[10px]">
-              <img
-                src="./public/images/car-rent-card/card-image5.jpg"
-                alt="car"
-                class="border-[1px] border-[#F3F3F3] rounded-[12px]"
-              />
-              <h2 class="font-estedad-semibold text-[16px] mb-3 mt-1">
-                اجاره هیوندای توسان 2014
-              </h2>
-              <h3 class="font-estedad-light text-[12px] mb-3">مدل:2016</h3>
-              <div
-                class="w-[full] h-[44px] flex bg-[#F3F3F3] rounded-[8px] p-3.5 mb-3"
-              >
-                <h3 class="font-estedad-regular text-[12px] w-[60px] mb-3">
-                  از ۱ تا 30 روز:
-                </h3>
-                <h3
-                  class="font-estedad-medium text-[16px] w-[241px] text-[#194BF0] mr-1 mb-3"
-                >
-                  8,500,000
-                </h3>
-                <h3 class="font-estedad-light text-[12px] w-[27px] mb-3">
-                  روزانه
-                </h3>
-              </div>
-              <div
-                class="w-[full] h-[44px] flex bg-[#F3F3F3] rounded-[8px] p-3.5"
-              >
-                <h3 class="font-estedad-regular text-[12px] w-[60px] mb-3">
-                  از ۱ تا 30 روز:
-                </h3>
-                <h3
-                  class="font-estedad-medium text-[16px] w-[241px] text-[#194BF0] mr-1 mb-3"
-                >
-                  8,500,000
-                </h3>
-                <h3 class="font-estedad-light text-[12px] w-[27px] mb-3">
-                  ماهانه
-                </h3>
-              </div>
-              <div
-                class="border-t-1 border-t-[#D7D7D7] flex justify-between items-centerw-[full] mt-3"
-              >
-                <h3 class="font-estedad-regular text-[12px] w-[65] mt-1">
-                  مبلغ ضمانت:
-                </h3>
-                <h3 class="font-estedad-medium text-[12px] w-[85] mt-1">
-                  80 میلیون تومان
-                </h3>
-              </div>
-              <a
-                href="#"
-                class="w-full bg-[#194BF0] rounded-[8px] text-white font-estedad-medium text-[14px] flex items-center justify-center mt-2 px-16 py-2"
-                >درخواست رزرو</a
-              >
-            </div>
-          </div>
-          <div
-            class="w-[385px] h-[510px] bg-white rounded-[12px] border border-[#E6E6E6] overflow-hidden"
-          >
-            <div class="p-[10px]">
-              <img
-                src="./public/images/car-rent-card/card-image6.jpg"
-                alt="car"
-                class="border-[1px] border-[#F3F3F3] rounded-[12px]"
-              />
-              <h2 class="font-estedad-semibold text-[16px] mb-3 mt-1">
-                اجاره بنز sl کروک
-              </h2>
-              <h3 class="font-estedad-light text-[12px] mb-3">مدل:2016</h3>
-              <div
-                class="w-[full] h-[44px] flex bg-[#F3F3F3] rounded-[8px] p-3.5 mb-3"
-              >
-                <h3 class="font-estedad-regular text-[12px] w-[60px] mb-3">
-                  از ۱ تا 30 روز:
-                </h3>
-                <h3
-                  class="font-estedad-medium text-[16px] w-[241px] text-[#194BF0] mr-1 mb-3"
-                >
-                  8,500,000
-                </h3>
-                <h3 class="font-estedad-light text-[12px] w-[27px] mb-3">
-                  روزانه
-                </h3>
-              </div>
-              <div
-                class="w-[full] h-[44px] flex bg-[#F3F3F3] rounded-[8px] p-3.5"
-              >
-                <h3 class="font-estedad-regular text-[12px] w-[60px] mb-3">
-                  از ۱ تا 30 روز:
-                </h3>
-                <h3
-                  class="font-estedad-medium text-[16px] w-[241px] text-[#194BF0] mr-1 mb-3"
-                >
-                  8,500,000
-                </h3>
-                <h3 class="font-estedad-light text-[12px] w-[27px] mb-3">
-                  ماهانه
-                </h3>
-              </div>
-              <div
-                class="border-t-1 border-t-[#D7D7D7] flex justify-between items-centerw-[full] mt-3"
-              >
-                <h3 class="font-estedad-regular text-[12px] w-[65] mt-1">
-                  مبلغ ضمانت:
-                </h3>
-                <h3 class="font-estedad-medium text-[12px] w-[85] mt-1">
-                  80 میلیون تومان
-                </h3>
-              </div>
-              <a
-                href="#"
-                class="w-full bg-[#194BF0] rounded-[8px] text-white font-estedad-medium text-[14px] flex items-center justify-center mt-2 px-16 py-2"
-                >درخواست رزرو</a
-              >
-            </div>
-          </div>
-        </div>
-        <!--end car rent-card-->
-      </div>
-      <!--end car rent-card and filter2-->
       <!--start footer-->
       <div
         class="w-full lg:w-[1480px] h-auto lg:h-[432px] rounded-[16px] bg-[#1E1E1EE5] shadow-[#000000]/35 mx-auto px-[24px] py-[56px] mt-20 lg:p-5"
