@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>document</title>
     <link rel="stylesheet" href="./src/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/persian-datepicker@1.2.0/dist/css/persian-datepicker.min.css"
+    />
     <link rel="stylesheet" href="./src/css/tailwind.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/persian-date@1.1.0/dist/persian-date.min.js"></script>
+    <script src="https://unpkg.com/persian-datepicker@1.2.0/dist/js/persian-datepicker.min.js"></script>
   </head>
   <body>
     <!-- start website -->
@@ -14,12 +21,13 @@
       <header
         class="w-full lg:w-[1224px] h-[96px] bg-white rounded-b-[16px] flex items-center justify-between px-6 lg:px-8 fixed top-0 z-20 lg:left-0 lg:right-0 mx-auto"
       >
-      <a href="#"><img
-        src="./public/images/header/Logo.png"
-        alt="auto rent logo"
-        class="w-[125px] md:w-[151px] h-[50px] md:h-[59px] object-cover"
-      />
-      </a>
+        <a href="#"
+          ><img
+            src="./public/images/header/Logo.png"
+            alt="auto rent logo"
+            class="w-[125px] md:w-[151px] h-[50px] md:h-[59px] object-cover"
+          />
+        </a>
         <div class="hidden lg:flex items-center gap-[40px]">
           <nav class="flex gap-[40px] items-center justify-center">
             <a
@@ -211,9 +219,9 @@
               class="h-[56px] font-estedad-medium border border-gray-300 lg:border-l-0 rounded-lg px-3 py-2 text-sm w-full"
             >
               <option>تهران-فرودگاه امام خمینی</option>
-              <option>فرودگاه مهرآباد</option>
-              <option>ترمینال جنوب</option>
-              <option>ترمینال غرب</option>
+              <option>تهران-فرودگاه مهرآباد</option>
+              <option>تهران-ترمینال جنوب</option>
+              <option>تهران-ترمینال غرب</option>
             </select>
           </div>
           <div class="flex flex-col gap-1 w-full lg:w-auto">
@@ -227,7 +235,8 @@
               تاریخ تحویل
             </label>
             <input
-              type="date"
+              type="text"
+              id="pdatepicker"
               class="h-[56px] font-estedad-medium border border-gray-300 lg:border-l-0 rounded-lg px-3 py-2 text-sm w-full lg:w-40"
             />
           </div>
@@ -257,7 +266,8 @@
               تاریخ بازگشت
             </label>
             <input
-              type="date"
+              type="text"
+              id="pdatepicker2"
               class="h-[56px] font-estedad-medium border border-gray-300 lg:border-l-0 rounded-lg px-3 py-2 text-sm w-full lg:w-40"
             />
           </div>
@@ -1222,16 +1232,15 @@
                 class="w-5 h-5 accordion-icon mr-2"
               />
               <span class="text-[16px] font-estedad-regular mr-2.5">
-                محدودیت کیلومتر در اجاره خودرو چقدر می باشد؟
+                آیا شخص دیگری میتواند به جای شخص اجاره کننده، خودرو را عودت دهد؟
               </span>
             </button>
             <div
               class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out text-[14px] text-gray-600"
             >
               <p class="p-4 mr-2.5 text-[14px] font-estedad-light">
-                محدودیت معمول: 200 تا 300 کیلومتر در روز. هزینه اضافه: مبلغ ثابت
-                به ازای هر کیلومتر بیشتر. امکان خرید پکیج بدون محدودیت کیلومتر
-                هم وجود دارد.
+                خیر، متأسفانه عودت خودرو فقط توسط شخصی انجام می‌شود که قرارداد
+                به نام او ثبت شده است و حضور همان فرد الزامی می‌باشد.
               </p>
             </div>
           </div>
@@ -1245,16 +1254,16 @@
                 class="w-5 h-5 accordion-icon mr-2"
               />
               <span class="text-[16px] font-estedad-regular mr-2.5">
-                محدودیت کیلومتر در اجاره خودرو چقدر می باشد؟
+                تحویل و عودت خودرو در کجا انجام میشود؟
               </span>
             </button>
             <div
               class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out text-[14px] text-gray-600"
             >
               <p class="p-4 mr-2.5 text-[14px] font-estedad-light">
-                محدودیت معمول: 200 تا 300 کیلومتر در روز. هزینه اضافه: مبلغ ثابت
-                به ازای هر کیلومتر بیشتر. امکان خرید پکیج بدون محدودیت کیلومتر
-                هم وجود دارد.
+                محل تحویل و عودت خودرو بسته به انتخاب شما تعیین می‌شود و خودرو
+                را در مکان تعیین شده با دریافت هزینه ترانسفر به شما تحویل
+                می‌دهند.
               </p>
             </div>
           </div>
@@ -1268,16 +1277,14 @@
                 class="w-5 h-5 accordion-icon mr-2"
               />
               <span class="text-[16px] font-estedad-regular mr-2.5">
-                محدودیت کیلومتر در اجاره خودرو چقدر می باشد؟
+                برای اجاره خودرو چه مدارکی لازم است؟
               </span>
             </button>
             <div
               class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out text-[14px] text-gray-600"
             >
               <p class="p-4 mr-2.5 text-[14px] font-estedad-light">
-                محدودیت معمول: 200 تا 300 کیلومتر در روز. هزینه اضافه: مبلغ ثابت
-                به ازای هر کیلومتر بیشتر. امکان خرید پکیج بدون محدودیت کیلومتر
-                هم وجود دارد.
+                گواهینامه معتبر، کارت ملی، مدرک شغلی و چک صیادی.
               </p>
             </div>
           </div>
@@ -1723,5 +1730,43 @@
       });
     </script>
     <!--faq-->
+    <!--Calendar-->
+    <script>
+      $(document).ready(function () {
+        $("#pdatepicker").persianDatepicker({
+          format: "YYYY/MM/DD",
+          autoClose: true,
+          initialValue: true, 
+          calendar: {
+            persian: {
+              locale: "fa",
+            },
+          },
+          onSelect: function (unix) {
+            console.log("تاریخ انتخاب شده (یونیکس): " + unix);
+            
+          },
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#pdatepicker2").persianDatepicker({
+          format: "YYYY/MM/DD",
+          autoClose: true,
+          initialValue: true, 
+          calendar: {
+            persian: {
+              locale: "fa",
+            },
+          },
+          onSelect: function (unix) {
+            console.log("تاریخ انتخاب شده (یونیکس): " + unix);
+            
+          },
+        });
+      });
+    </script>
+    <!--Calendar-->
   </body>
 </html>
